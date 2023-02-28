@@ -1,3 +1,4 @@
+name: DailyUpdates
 on:
   schedule:
     - cron: '0/10 11 * * 1-5'
@@ -6,5 +7,5 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - name: Every time
+      - name: Daily
         run: echo "This step will always run"
