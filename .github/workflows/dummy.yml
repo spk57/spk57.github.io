@@ -2,7 +2,8 @@ name: DailyUpdates
 on:
   schedule:
     - cron: '0/10 11 * * 1-5'
-
+  workflow_dispatch
+  
 jobs:
   test_schedule:
     runs-on: ubuntu-latest
